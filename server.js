@@ -7,6 +7,7 @@ const app=express()
 dbconnect()
 port=9000
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/userauth",userroutes)
 app.use(errorhandler)
