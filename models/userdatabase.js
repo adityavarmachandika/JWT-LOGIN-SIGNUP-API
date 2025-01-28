@@ -14,5 +14,4 @@ const loginschema=mongoose.Schema({
         default:Date.now
     }
 })
-
 module.exports=mongoose.model('loginschema',loginschema)
